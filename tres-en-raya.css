@@ -1,0 +1,95 @@
+*{
+    font-family: "Reenie Beanie", cursive;
+}
+body {
+    background: rgb(46, 43, 43);
+}
+.game-container {
+    text-align: center;
+}
+
+img {
+    width: 10rem;
+    height: 10rem;
+    display: none;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+.img-container {
+    width: 10rem;
+    height: 10rem;
+    cursor: pointer;
+
+}
+#square-4-container, #square-5-container, #square-6-container {
+    border-top: 3px solid #ffffffbb;
+    border-bottom: 3px solid #ffffffbb;
+}
+#square-2-container, #square-5-container, #square-8-container {
+    border-left: 3px solid #ffffffbb;
+    border-right: 3px solid #ffffffbb;
+}
+#tablero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 30rem;
+    margin: 0 auto;
+}
+.score {
+    display: inline-block;
+    color: #ffffffbb;
+}
+#score-player-1-container {
+    margin-right: 2rem;
+}
+#score-player-2-comtainer {
+    margin-left: 2rem;
+}
+#score-player-1 {
+    font-size: 4rem;
+}
+#score-player-2 {
+    font-size: 4rem;
+}
+h1 {
+    margin: 0;
+}
+button {
+    color: white;
+    font-size: 2rem;
+    background: rgb(80, 75, 75);
+    border-radius: 0.4rem;
+}
+button:hover {
+    font-size: 2.2rem;
+    background: rgb(61, 57, 57);
+    border-radius: 0.4rem;
+}
+@media (max-width: 600px) {
+    /* estilos para dispositivos con ancho inferior a 600px */
+    img {
+      width: 5rem; /* hace las imágenes más pequeñas */
+      height: 5rem;
+    }
+    .img-container {
+      width: 5rem;
+      height: 5rem;
+    }
+    #tablero {
+      width: 15rem; /* hace el tablero más pequeño */
+    }
+    #score-player-1 {
+      font-size: 2rem; /* hace los puntajes más pequeños */
+    }
+    #score-player-2 {
+      font-size: 2rem;
+    }
+    button {
+      font-size: 1rem; /* hace los botones más pequeños */
+    }
+    button:hover {
+      font-size: 1.2rem;
+    }
+  }
+  
+
+  
