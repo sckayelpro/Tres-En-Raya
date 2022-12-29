@@ -4,7 +4,7 @@ const squares = document.querySelectorAll("img");
 const scorePlayer1 = document.querySelector("#score-player-1");
 const scorePlayer2 = document.querySelector("#score-player-2");
 
-const rutasImagenes = ["a", "b", "c","d","e","f","g","h","i"];
+const rutasImagenes = ["/images/1.png", "/images/2.png", "/images/3.png","/images/4.png","/images/5.png","/images/6.png","/images/7.png","/images/8.png","/images/9.png"];
 
 const reset = document.querySelector("#reset-button");
 
@@ -260,6 +260,7 @@ function cambiarSrcImagenes(nuevoSrc) {
 
 imagenes.forEach((imagen, indice) => {
   imagen.src = rutasImagenes[indice];
+  imagen.style.display ="none";
 });
 }
 reset.addEventListener("click", function (){
